@@ -1,0 +1,48 @@
+{
+  "editor.tabSize": 2,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // "editor.defaultFormatter": "octref.vetur"
+  },
+  // 是否自动格式化，只在新文件创建的时候会格式化，老文件还是别格式化了，不然 vue 模板元素属性 折行改动太多了
+  "editor.formatOnSave": true,
+  // "eslint.validate": [
+  //   "javascript",
+  //   "typescript",
+  //   "html",
+  //   "vue"
+  // ],
+  // 加分号
+  // "prettier.semi": true,
+  // "prettier.singleQuote": true,
+  // "window.zoomLevel": -1, // 表示窗口缩小20%.
+  "editor.wordWrap": "wordWrapColumn", // 超长代码一般出现在html中, 我不喜欢html属性换行, 但是又想看到全部, 那就只能设置编辑器视觉上的换行了.
+  "editor.wordWrapColumn": 300, // 同上
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      // vue 模板元素属性折行配置
+        "wrap_attributes": "aligned-multiple"
+    },
+    "prettyhtml": {
+        // "printWidth": 100,
+        "singleQuote": false,
+        "wrapAttributes": false,
+        "sortAttributes": false
+    }
+  },
+}
