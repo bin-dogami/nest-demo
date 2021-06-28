@@ -21,7 +21,7 @@ import { DemoModule } from './demo/demo.module';
       synchronize: true,
     }),
     // MyDataModule,
-    // DemoModule,
+    DemoModule,
   ],
   controllers: [AppController],
   providers: [AppService],

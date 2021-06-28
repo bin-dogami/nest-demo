@@ -10,6 +10,7 @@ export class DemoController {
     private readonly mydataService: MyDataService,
   ) {}
 
+  // 为了测试就用 Get了，其实这里应该用 Post
   @Get()
   test(): string {
     return this.demoService.test();
